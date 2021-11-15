@@ -3,8 +3,8 @@ int main(){
 	int year;
 	scanf("%d",&year) ;
 	if(year % 4==0 &&  year % 100==0 || year % 400==0)
-	printf("%d就是闰年\n",year);
+	printf("%d戮脥脢脟脠貌脛锚\n",year);
 	else
-	printf("%d不是闰年\n",year);
+	printf("%d虏禄脢脟脠貌脛锚\n",year);
 	return 0;
 } 
