@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	float yongjing,value;
+	
+	printf("Enter value of trade:\n");
+	scanf("%f",&value);
+	
+	if(value<2500.00f) yongjing=30.00f+.017f*value;
+	else if(value>=2500.00f&&value<6250.00f) yongjing=56.00f+.0066*value;
+	else if(value>=6250.00f&&value<20000.00f) yongjing=76.00f+.0034*value;
+	else if(value>=20000.00f&&value<50000.00f) yongjing=100.00f+.0022*value;
+	else if(value>=50000&&value<500000.00f) yongjing=155.00f+.0011*value;
+	else yongjing=255.00f+.0009*value;
+	
+	if(yongjing<39) yongjing=39;
+	printf("yongjing:$%.2f\n",yongjing);
+	
+	return 0;
+}
